@@ -79,5 +79,6 @@ class QuoteForm extends Component {
 }
 
 
-//add arguments to connect as needed
+// add arguments to connect as needed
+// add addQuote action to allow component to use it (instead of dispatch)
 export default connect(null, { addQuote })(QuoteForm);

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import QuoteCard from '../components/QuoteCard';
+// import the actions that will be used
 import { removeQuote, upvoteQuote, downvoteQuote } from "../actions/quotes"
 
 class Quotes extends Component {
@@ -33,6 +34,7 @@ class Quotes extends Component {
   }
 }
 
+// need to mapStateToProps to utilize the quotes from the store/state
 const mapStateToProps = (state) => {
   // console.log(state)
   return ({

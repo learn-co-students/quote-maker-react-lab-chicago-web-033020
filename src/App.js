@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import the components to use: 
 import Quotes from "./containers/Quotes"
 import QuoteForm from "./components/QuoteForm"
 

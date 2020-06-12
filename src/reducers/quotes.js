@@ -1,3 +1,6 @@
+// this file is imported into reducers/index.js, into combineReducers
+// this is then imported into index.js (main one) and an argument into createStore 
+
 export default (
   state = [],
   action
