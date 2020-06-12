@@ -1,15 +1,13 @@
 import React from "react";
 
 const QuoteCard = (props) => {
-  // console.log(props)
   return (
     <div>
       <div className="card card-inverse card-success card-primary mb-3 text-center">
         <div className="card-block">
           <blockquote className="card-blockquote">
-            {/* ternaries were added to allow page to load since there is no initial quotes */}
-            <p>{props.quote ? props.quote.content : "No Content"}</p>
-            <footer>-<cite title="Source Title">{props.quote ? props.quote.author : "No Author"}</cite></footer>
+            <p>{props.quote.content}</p>
+            <footer>-<cite title="Source Title">{props.quote.author}</cite></footer>
           </blockquote>
         </div>
         <div className="float-right">
@@ -28,7 +26,7 @@ const QuoteCard = (props) => {
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div>Votes: {props.quote ? props.quote.votes : "0"}</div>
+          <div>Votes: {props.quote.votes}</div>
         </div>
       </div>
     </div>
